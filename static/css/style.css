@@ -1,0 +1,105 @@
+/* Navbar */
+.navbar{
+position: relative;
+z-index: 1;
+}
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+.nav-link{
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../img/44.AKAKOM.png);
+    background-size:cover;
+    height: 550px;
+    text-align: center;
+    position: relative;
+}
+.jumbotron .container{
+    position: relative;
+    z-index: 1;
+}
+.jumbotron .form-1{
+   margin-top: 80px;
+}
+.jumbotron .display-4 {
+    color:white;
+    margin-top: 80px;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+.jumbotron .display-4 span{
+    font-weight: 150;
+}
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Info panel */
+.info-panel{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -40px;
+    background-color: white;
+    padding: 30px;
+}
+.info-panel h4{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* DESKTOP STANDAR */
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link{
+        color: black !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7 );
+    }
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0B63DC;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron{
+        margin-top: -85px;
+        height: 650px;
+    }
+    .jumbotron .display-4{
+        font-size: 50px;
+        color:white;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    }
+    .jumbotron .form-1{
+        margin-top: 100px;
+    }
+}
